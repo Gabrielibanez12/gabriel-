@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Portofolio</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- my style css -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <!-- HOME -->
+    <section class="home" id="home">
+        <header>
+            <h2> Gabriel Ibanez Purnomo</h2>
+            <ul class="">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Sosial Media</a></li>
+            </ul>
+        </header>
+        <div class="section-home">
+            <div class="field-text-home">
+                <h1>Hi, I am <br> <span>Gabriel Ibanez Purnomo.</span></h1>
+                <h3>X SIJA 1 | <a id="type"></a></h3>
+            </div>
+            <div class="field-image-home">
+                <img src="img/ganteng.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- HOME -->
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container-about" data-aos="fade-up" data-aos-duration="1500">
+            <h1>About <span>Me</span></h1>
+            <p>Halo, nama saya Gabriel Ibanez Purnono, seorang remaja berusia 15. tahun yang lahir dan besar di DKI Jakarta. Saat ini, 
+                saya tinggal di Jakarta Utara, tepatnya di Jalan Patimura, Koja. Saya bersekolah di SMKN Jakarta Timur, 
+                kelas X SIJA 1, dan tengah mendalami berbagai ilmu yang mendukung cita-cita saya di bidang teknologi.</p>
+            <p>Saya memiliki hobi mengeksplorasi hal-hal baru karena rasa ingin tahu yang besar. Selain itu, saya sangat menyukai desain, baik itu desain grafis maupun bentuk kreatif lainnya. Bagi saya, desain adalah media untuk mengekspresikan ide dan imajinasi. 
+                Saya percaya bahwa dengan terus belajar dan mencoba, saya bisa mengasah kemampuan dan memberikan kontribusi yang berarti di - masa depan..</p>
+        </div>
+    </section>
+    <!-- ABOUT -->
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h1>Social<span>Media</span></h1>
+        <div class="container-contact">
+            <div class="sosmed-and-maps">
+                <div class="domain-and-contact">
+                    <div class="social-media">
+                                    <a href="https://www.instagram.com/briel_purnomo/" target="_blank">
+                                 <i class="fa-brands fa-instagram fa-2x" style="margin-right: 10px;"></i>@briel_purnomo
+                                 </a>
+                                 <br></br>
+                                 <p style="margin-right: 25px;"></p>
+                                 <a href="https://www.tiktok.com/@xiaoce5?_t=8rm4dFbIan4&_r=1" target="_blank">
+                                    <i class="fa-brands fa-tiktok fa-2x" style="margin-right: 10px;"></i>@xiaoce5
+                                  </a>
+                               </div>
+                          <div class="form-message">
+                    <form action="">
+               </form>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+
+    <!-- AOS ANIMATION JAVASCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+     
+    <!-- MY SCRIPT -->
+    <script src="js/script.js"></script>
+
+    <!-- Typewrite -->
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect/dist/core.js"></script>
+    <script>
+        var app = document.getElementById('type');
+
+        var customNodeCreator = function(character) {
+            return document.createTextNode(character);
+        }
+
+            var typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 150,
+            onCreateTextNode: customNodeCreator,
+        });
+
+        typewriter
+        .typeString('Prajurit Spartan')
+        .pauseFor(300)
+        .start();
+
+    </script>
+
+</body>
+
+</html>
